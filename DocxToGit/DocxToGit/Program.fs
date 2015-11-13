@@ -5,8 +5,6 @@ module DocxToGit.main
 
 open System
 open ConvertFile
-open UpdateRepo
-
 
  [<EntryPoint>]
 let main argv = 
@@ -18,14 +16,5 @@ let main argv =
     let fileName = List.tail arguments |> List.head
 
     convertDocument (List.head arguments) fileName extension
-      
- 
-    let result = github (List.last arguments)
-
-    let input = Console.ReadLine()
-
-    Console.Write("You entered: {0}", input)
- 
-    let nextInput = Console.ReadLine() |> ignore
     0
 
