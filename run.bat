@@ -1,1 +1,1 @@
-covertDocxAndCommitToGit.exe
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& 'C:\doctoGit\covertDocxAndCommitToGit.ps1'"
